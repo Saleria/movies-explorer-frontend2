@@ -10,7 +10,7 @@
 
 .promo__title {
     font-size: 50px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 1.16;
     color: rgba(255, 255, 255, 1);
     max-width: 640px;
@@ -22,7 +22,7 @@
 .promo__subtitle {
     font-size: 13px;
     line-height: 1.2;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
     max-width: 310px;
     margin-top: 36px;
@@ -41,7 +41,7 @@
     border-radius: 3px;
     margin: 146px 0 75px 0;
     font-size: 12px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 1.3px;
     transition: all .3s linear;
     cursor: pointer;

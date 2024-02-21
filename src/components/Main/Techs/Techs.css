@@ -9,7 +9,7 @@
 .techs__title {
     font-size: 50px;
     line-height: 1.16;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
     max-width: 600px;
     text-align: center;
@@ -20,7 +20,7 @@
 .techs__subtitle {
     font-size: 14px;
     line-height: 1.4;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
     max-width: 460px;
     margin: 0 auto;
@@ -41,7 +41,7 @@
 .table__text {
     font-size: 14px;
     line-height: 1.2;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
     text-align: center;
 }

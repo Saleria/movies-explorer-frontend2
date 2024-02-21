@@ -9,7 +9,7 @@
 .project__title {
     font-size: 22px;
     line-height: 1.2;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
     padding: 0 0 23px 0;
     border-bottom: 1px solid rgba(218, 218, 218, 1);
@@ -33,14 +33,14 @@
 .project__subtitle {
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
 }
 
 .project__text {
     font-size: 14px;
     line-height: 1.4;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -58,7 +58,7 @@
 }
 
 .plan__text_week {
-    font-weight: 400px;    
+    font-weight: 400; 
     min-height: 36px;    
     padding: 9px 0;
     box-sizing: border-box;    
