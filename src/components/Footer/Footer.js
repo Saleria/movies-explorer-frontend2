@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
     return (
         <section className="footer">
-            <h4 className="footer__title footer__info">
+            <h4 className="footer__title">
                 Учебный проект Яндекс.Практикум х BeatFilm.
             </h4>
             <div className="footer__container">
