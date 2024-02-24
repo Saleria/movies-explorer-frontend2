@@ -1,0 +1,55 @@
+.film {
+    max-width: 360px;
+}
+
+.film__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 18px;
+}
+
+.film__title {
+    max-width: 240px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 500;    
+    color: rgba(255, 255, 255, 1);
+    margin: 0 14px 0 0;
+    padding: 0;
+}
+
+.film__time {
+    max-width: 70px;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400; 
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.film__img {
+    max-width: 360px;
+    margin: 0;
+}
+
+.film__button {
+    max-width: 100px;
+    min-height: 29px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(49, 49, 49, 1);
+    border: none;
+    border-radius: 30px;
+    padding: 9px 15px;
+    margin: 18px 130px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.film__button:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
