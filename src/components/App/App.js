@@ -6,6 +6,7 @@ import SavedMovies from '../SavedMovies/SavedMovies';
 import NotFound from '../NotFound/NotFound';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import Profile from '../Profile/Profile';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/movies" element={<Movies />} />
         <Route path="/saved-movies" element={<SavedMovies />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="profile" element={<Profile />} />
       </Routes>
     </div>
   );
