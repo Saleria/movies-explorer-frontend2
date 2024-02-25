@@ -5,6 +5,18 @@
     padding-bottom: 43px;
 }
 
+@media screen and (max-width: 1024px) {
+    .filter {
+        padding-bottom: 52px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter {
+        padding-bottom: 63px;
+    }
+}
+
 .filter__check {
     width: 36px;
     height: 20px;
@@ -19,6 +31,11 @@
     transition: all .3s linear;
 }
 
+.filter__check:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
 .filter__check:checked {
     background-color: rgba(43, 224, 128, 1);
     background-position: bottom 6px right 6px;
@@ -31,4 +48,12 @@
     color: rgba(255, 255, 255, 1);
     margin: 0;
     padding-left: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .filter__title {
+        font-size: 11px;
+        line-height: 1.6;
+        padding-left: 13px;
+    }
 }

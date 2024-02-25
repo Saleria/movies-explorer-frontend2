@@ -102,9 +102,8 @@
 
 @media screen and (max-width: 1024px) {
     .promo__button {
-        margin-top: 92px;
-        margin-bottom: 76px;
-        align-self: center;
+        display: block;
+        margin: 92px auto 76px;
     }
 }
 
@@ -112,7 +111,6 @@
     .promo__button {
         margin-top: 80px;
         margin-bottom: 30px;
-        align-self: center;
     }
 }
 

@@ -10,10 +10,10 @@ function MoviesCard() {
     );
     const setPath = location === "/saved-movies";
     function setButtonState () {
-        setIsLiked(true);
+        setIsLiked(!isLiked);
     }
     return (
-        <div className="film">
+        <li className="film">
             <div className="film__container">
                 <h2 className="film__title">
                     В погоне за Бенкси
@@ -24,7 +24,7 @@ function MoviesCard() {
             <button className={setPath ? "film__button-delete" : cardLikeButtonClassName}
                 onClick={setButtonState}
             ></button>
-        </div>
+        </li>
     );
 }
 
