@@ -1,11 +1,12 @@
 .film {
     max-width: 360px;
+    background-color: rgba(34, 34, 34, 1);
 }
 
 .film__container {
     display: flex;
     justify-content: space-between;
-    margin: 18px 18px;
+    padding: 18px 18px;
 }
 
 .film__title {
@@ -34,6 +35,33 @@
 }
 
 .film__button {
+    width: 100px;
+    min-height: 29px;
+    background-color: rgba(49, 49, 49, 1);
+    border: none;
+    border-radius: 30px;
+    padding: 9px 15px;
+    margin: 18px 130px;
+    transition: all .3s linear;
+    cursor: pointer;
+    background-image: url("../../../images/button-text.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.film__button:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
+.film__button_active {
+    background-color: rgba(238, 52, 101, 1);
+    background-image: url('../../../images/save_active.svg');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.film__button-delete {
     max-width: 100px;
     min-height: 29px;
     font-size: 12px;
@@ -47,9 +75,11 @@
     margin: 18px 130px;
     transition: all .3s linear;
     cursor: pointer;
+    background-image: url('../../../images/button_delete.svg');
+    background-repeat: no-repeat; 
 }
 
-.film__button:hover {
+.film__button-delete:hover {
     transition: all .3s linear;
     opacity: .6;
 }
