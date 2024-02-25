@@ -2,6 +2,7 @@ import React from "react";
 import SearchForm from "./SearchForm/SearchForm";
 import MoviesCardList from "./MoviesCardList/MoviesCardList";
 import FilterCheckbox from "./FilterCheckbox/FilterCheckbox";
+import Footer from "../Footer/Footer";
 
 function Movies() {
     return (
@@ -9,6 +10,7 @@ function Movies() {
             <SearchForm />
             <FilterCheckbox />
             <MoviesCardList />
+            <Footer />
         </section>
     );
 }

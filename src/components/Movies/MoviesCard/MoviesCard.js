@@ -8,7 +8,7 @@ function MoviesCard() {
     const cardLikeButtonClassName = (
         `film__button ${isLiked && 'film__button_active'}`
     );
-    const setPath = location === "/saved-movies";
+    const setPath = location.pathname === "/saved-movies";
     function setButtonState () {
         setIsLiked(!isLiked);
     }

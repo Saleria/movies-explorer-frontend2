@@ -125,8 +125,9 @@
     display: block;
     transition: all .3s linear;
     cursor: pointer;
-    background-image: url('../../../images/button_delete.svg');
+    background-image: url('../../../images/icon-del.svg');
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (max-width: 767px) {
