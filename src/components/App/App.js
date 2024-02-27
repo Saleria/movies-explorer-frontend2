@@ -4,6 +4,7 @@ import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import NotFound from '../NotFound/NotFound';
+import Register from '../Register/Register';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Profile from '../Profile/Profile';
@@ -17,6 +18,7 @@ function App() {
         <Route path="/saved-movies" element={<SavedMovies />} />
         <Route path="*" element={<NotFound />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="/signup" element={<Register />} />
       </Routes>
     </div>
   );
