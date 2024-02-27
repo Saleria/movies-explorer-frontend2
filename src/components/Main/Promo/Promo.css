@@ -57,7 +57,7 @@
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
     max-width: 310px;
-    margin-top: 36px;
+    margin: 36px 0 0 0;
     opacity: 0.5;
 }
 
@@ -81,15 +81,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
     border: 1px solid;
     width: 129px;
     height: 36px;
     border-radius: 3px;
     margin: 146px 0 75px 0;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.3px;
+
     transition: all .3s linear;
     cursor: pointer;
     opacity: .6;
@@ -98,6 +95,14 @@
 .promo__button:hover {
     transition: all .3s linear;
     opacity: .8;
+}
+
+.promo__link {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
