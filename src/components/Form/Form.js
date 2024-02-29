@@ -6,7 +6,9 @@ function Form({
     children,
     buttonText,
     lableText,
-    buttonEnterText }) {
+    buttonEnterText,
+    onClick,
+    onSubmit }) {
     return (
         <section className="form">
             <div className="form__container">
@@ -18,18 +20,21 @@ function Form({
                     <fieldset className="form__info">
                         {children}
                     </fieldset>
-                    <button className="form__button" type="submit">
+                    <button className="form__submit-button" type="submit"
+                        onSubmit={onSubmit}>
                         {buttonText}
                     </button>
                     <div className="form__enter">
                         <label className="form__label" htmlFor="button">
                             {lableText}
                         </label>
-                        <button className="form__button-enter" id="button">
+                        <button className="form__button-enter"
+                            id="button"
+                            type="submit"
+                            onClick={onClick}>
                             {buttonEnterText}
                         </button>
                     </div>
-
                 </form>
             </div>
         </section>

@@ -18,9 +18,9 @@ function App() {
         <Route path="/movies" element={<Movies />} />
         <Route path="/saved-movies" element={<SavedMovies />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="profile" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<Register />} />
-        <Route path="/signin" element={<Login />}/>
+        <Route path="/signin" element={<Login />} />
       </Routes>
     </div>
   );
