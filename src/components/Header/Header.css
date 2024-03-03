@@ -4,6 +4,10 @@
     padding: 0 70px 0;
 }
 
+.header__disable {
+    display: none;
+}
+
 .header__container {
     margin: 0;
     display: flex;
@@ -12,7 +16,7 @@
 
 .header__logo {
     max-width: 38px;
-    padding: 18px 0 18px 70px;
+    padding: 18px 0 18px;
 }
 
 .header__registration{

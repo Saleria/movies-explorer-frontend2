@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../Form/Form";
 
-function Login() {
+function Login({onSubmit}) {
     const navigate = useNavigate();
     function toRegister() {
         navigate("/signup", { replace: true });
@@ -13,7 +13,8 @@ function Login() {
             buttonText="Войти"
             lableText="Ещё не зарегистрированы?"
             buttonEnterText="Регистрация"
-            onClick={toRegister}>
+            onClick={toRegister}
+            onSubmit={onSubmit}>
             <div className="form__block">
                 <label className="form__input-lable" htmlFor="input-email">
                     E-mail

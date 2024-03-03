@@ -5,13 +5,15 @@
     padding: 75px 70px 0 70px;
     box-sizing: border-box;
     display: flex;
-    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 @media screen and (max-width: 1024px) {
     .promo {
         padding: 140px 44px 0 44px;
         flex-direction: column-reverse;
+        align-items: center;
     }
 }
 
@@ -55,10 +57,9 @@
     font-size: 13px;
     line-height: 1.2;
     font-weight: 400;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .5);
     max-width: 310px;
     margin: 36px 0 0 0;
-    opacity: 0.5;
 }
 
 @media screen and (max-width: 1024px) {
@@ -80,16 +81,14 @@
     background: none;
     background-repeat: no-repeat;
     background-position: center center;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .6);
     border: 1px solid;
     width: 129px;
     height: 36px;
     border-radius: 3px;
     margin: 146px 0 75px 0;
-
     transition: all .3s linear;
     cursor: pointer;
-    opacity: .6;
 }
 
 .promo__button:hover {
@@ -103,6 +102,8 @@
     font-weight: 400;
     line-height: 1.3px;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -121,14 +122,10 @@
 
 .promo__logo {
     max-width: 310px;
-    position: absolute;
-    top: 75px;
-    right: 70px;
 }
 
 @media screen and (max-width: 1024px) {
     .promo__logo {
-        position: initial;
         margin: 0 auto;
     }
 }

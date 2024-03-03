@@ -1,5 +1,5 @@
-import React from 'react';
-//import Header from '../Header/Header';
+import React, { useState } from 'react';
+import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
@@ -9,10 +9,29 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
+import BurgerPopup from '../BurgerPopup/BurgerPopup';
 
 function App() {
+
+  const [isBurgerPopup, setIsBurgerPopup] = useState(false);
+  const [isLogged, setIsLogged] = useState(false);
+
+  function handleOpenPopup() {
+    setIsBurgerPopup(true);
+  }
+  function handleClosePopup() {
+    setIsBurgerPopup(false);
+  }
+  function loggedIn(evt) {
+    evt.preventDefault();
+    setIsLogged(true);
+  }
   return (
     <div className="page">
+      <Header 
+      onBurgerPopup={handleOpenPopup}/>
+      <BurgerPopup 
+      onClose={handleClosePopup}/>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/movies" element={<Movies />} />
@@ -20,7 +39,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<Register />} />
-        <Route path="/signin" element={<Login />} />
+        <Route path="/signin" element={<Login onSubmit={loggedIn}/>} />
       </Routes>
     </div>
   );
