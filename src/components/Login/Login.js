@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../Form/Form";
 
-function Login({onSubmit}) {
+function Login({ onSubmit }) {
     const navigate = useNavigate();
     function toRegister() {
         navigate("/signup", { replace: true });

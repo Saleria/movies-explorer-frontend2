@@ -6,8 +6,8 @@ import AboutMe from "./AboutMe/AboutMe";
 import Portfolio from "./Portfolio/Portfolio";
 import Footer from "../Footer/Footer";
 
-function Main () {
-    return(
+function Main() {
+    return (
         <main>
             <Promo />
             <AboutProject />
@@ -15,7 +15,7 @@ function Main () {
             <AboutMe />
             <Portfolio />
             <Footer />
-        </main>        
+        </main>
     );
 }
 

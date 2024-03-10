@@ -22,24 +22,26 @@ function App() {
   function handleClosePopup() {
     setIsBurgerPopup(false);
   }
-  function loggedIn(evt) {
-    evt.preventDefault();
-    setIsLogged(true);
-  }
+
   return (
     <div className="page">
-      <Header 
-      onBurgerPopup={handleOpenPopup}/>
-      <BurgerPopup 
-      onClose={handleClosePopup}/>
+      <Header
+        isLogged={isLogged}
+        isOpen={handleOpenPopup} />
+      <BurgerPopup
+        isOpen={isBurgerPopup}
+        onClose={handleClosePopup} />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={
+          <Main
+            onBurgerPopup={handleOpenPopup}
+            isLogged={isLogged} />} />
         <Route path="/movies" element={<Movies />} />
         <Route path="/saved-movies" element={<SavedMovies />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<Register />} />
-        <Route path="/signin" element={<Login onSubmit={loggedIn}/>} />
+        <Route path="/signin" element={<Login />} />
       </Routes>
     </div>
   );
